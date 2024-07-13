@@ -1,0 +1,24 @@
+/*Color Palette #134074 Yale Blue, #EEF4ED Mint Cream, 
+#0B2545 Oxford Blue, #8DA9C4 Powder Blue, 
+*/
+.header{
+    padding: 2rem; 
+  }
+  
+  .content{
+    display: grid; 
+    background-color: #EEF4ED;
+    height: 100%; 
+    width: 100%; 
+    align-items: center; 
+    justify-content: center;
+    height: 75vh; 
+  }
+  
+.info{
+  background-color: #EEF4ED;
+  font-family: Oxygen; 
+  font-size: 2.5rem; 
+  text-align: center; 
+  padding-top: 5rem; 
+}

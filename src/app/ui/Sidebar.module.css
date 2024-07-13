@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+.navbar{
+    display: flex; 
+    justify-content:right;
+    flex-direction: column;
+
+}
+
+.navbarLink{
+    padding: 0.75em; 
+    font-family: Oxygen; 
+    color: white; 
+    background-color:#0B2545;
+    border: 1px solid gray; 
+    border-radius: 20px 0px 0px 20px;
+    margin-bottom: 0.5em; 
+    border: 1.5px solid #CCC; 
+    resize: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbarLink:hover{
+    background-color: #22436c;
+    translate: 0% -7%; 
+}
+
+.active{
+    padding: 0.75em; 
+    font-family: Oxygen; 
+    color: white; 
+    background-color:#305980;
+    border: 1px solid gray; 
+    border-radius: 20px 0px 0px 20px;
+    margin-bottom: 0.5em; 
+    border: 1.5px solid #CCC; 
+    resize: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

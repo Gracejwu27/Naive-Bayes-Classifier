@@ -1,0 +1,45 @@
+.navbar {
+    background: #202c46;
+    display: flex;
+    align-items: center; /* Center the items vertically */
+    justify-content: center;
+    width: 100%;
+    color: white;
+    padding: 0.5rem; 
+    padding-left: 1rem;
+}
+
+/* Set up the start and end links styles */
+.navbarStart {
+    padding: 0.25rem;
+    font-size: 2rem;
+    margin-right: auto;
+}
+
+.navbarEnd {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative; /* Add this line */
+    transition: background 0.3s ease; /* Add smooth transition */
+}
+
+.navbarEnd:hover {
+    background: #1b5392; /* Use the background shorthand property */
+}
+
+.navbarEnd h2 {
+    margin: 0;
+    padding: 1rem 1.5rem; /* Adjust padding for the sliver effect */
+    transition: background 0.3s ease; /* Add smooth transition */
+}
+
+.navbarEnd:hover h2 {
+    background: #1b5392; /* Change background color on hover */
+    border-radius: 5px; /* Add rounded corners if desired */
+}
