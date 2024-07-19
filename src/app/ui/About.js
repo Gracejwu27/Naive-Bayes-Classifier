@@ -89,7 +89,7 @@ export default function About(){
                     word does not appear in the training data. 
                     However, since most of these probabilitie will be extremely small, we use the logarithm function and add these probabilities 
                     to get our <b>log-probability score:     </b>
-                    <b>   lnP(B|A) = lnP(A) + lnP(w_1 | A) + lnP(w_2 | A) + ... + lnP(w_N | A)</b> <br/> 
+                    <b>   lnP(A|B) = lnP(A) + lnP(w_1 | A) + lnP(w_2 | A) + ... + lnP(w_N | A)</b> <br/> 
                     To get these probabilities we must train that data using a dataset (supervised learning) and gather the words that are associated
                     with the label. The larger the dataset and more words we have, the better the model will perform. Finally, with the posterior probability
                     calculated, the model will choose the label with the highest probabliity as that label.
