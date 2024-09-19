@@ -1,21 +1,26 @@
+"use client";
+import { useEffect } from "react";
 import styles from "./page.module.css";
-import Header from "../ui/Header";
-import TrainTextAnalyzer from "../ui/TrainAnalyzerText";
-import About from "../ui/About";
+import Header from "/Users/gracewu/text_analyzer/src/app/ui/Header.js";
+import TrainTextAnalyzer from "/Users/gracewu/text_analyzer/src/app/ui/TrainAnalyzerText.js";
+import About from "/Users/gracewu/text_analyzer/src/app/ui/About.js";
 
 export default function Home() {
+  useEffect(() => {
+    // Any client-side code that uses the window object can go here
+  }, []);
+
   return (
     <>
-    <div className={styles.Header}>
-      <Header/> 
-    </div>
-    <div className = {styles.content}>
-      <TrainTextAnalyzer/>
-    </div>
-    <div id = "about"> 
-      <About/>
-    </div>
+      <div className={styles.Header}>
+        <Header/> 
+      </div>
+      <div className={styles.content}>
+        <TrainTextAnalyzer/>
+      </div>
+      <div id="about"> 
+        <About/>
+      </div>
     </>
-
   );
 }

@@ -1,7 +1,9 @@
+"use client";
+
 import styles from "./page.module.css";
-import Header from "../ui/Header";
-import EmotionAnalyzer from "../ui/EmotionAnalyzer";
-import About from "../ui/About";
+import Header from "/Users/gracewu/text_analyzer/src/app/ui/Header.js";
+import EmotionAnalyzer from "/Users/gracewu/text_analyzer/src/app/ui/EmotionAnalyzer.js";
+import About from "/Users/gracewu/text_analyzer/src/app/ui/About.js";
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
       <Header/> 
     </div>
     <div className = {styles.content}>
-      <EmotionAnalyzer/> 
+         <EmotionAnalyzer/> 
     </div>
     <div id = "about"> 
       <About/>

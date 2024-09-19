@@ -2,7 +2,6 @@
 'use client';
 import {Oxygen} from "next/font/google"
 import styles from "./About.module.css";
-import Tex2SVG  from "react-hook-mathjax";
 
 const oxygen = Oxygen({
   weight: ['400','700'],
@@ -46,13 +45,12 @@ export default function About(){
                     The text analyzer should be able to tokenize the training data and then train the model. Make sure
                     that the labels are consistent and do not contain spaces or else the model will treat them as different. 
                 </p>
-                <img className = {styles.picture} alt = "Example CSV FIle" src = "./ExampleCSVFile.png"/>
                 <h5 className = {styles.smallHeader}>Train your own model (text)</h5>
                 <p className = {styles.infoUse}>
                     To train the model with text make sure that the data is in the correct format. 
                     The first column should contain the text you want to classify and the second column should
                     contain the label. The columns should be separated by a comma and each row separated by a new line.
-                    Make sure there aren't any commas in the text or else the model will treat them as separate columns.
+                    Make sure there are not any commas in the text or else the model will treat them as separate columns.
                     <br/>
                     Press the train button and the model will train using the data you provided.
                     Finally input text and click on the classify text button to classify based on the training data you provided.
@@ -68,7 +66,6 @@ export default function About(){
                     based on prior knowledge of conditions that might be related to the event. <br/> 
                 </p>  
                 <div className={styles.math}>
-                        <Tex2SVG display="inline" latex="P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}" />
                         <ul className = {styles.list}>
                             <li>P(A|B) is the probability of event A given event B (posterior probability)</li>
                             <li>P(B|A) is the probability of event B given event A is true (likelihood)</li>
@@ -77,7 +74,7 @@ export default function About(){
                         </ul>
                 </div>
                 <p className = {styles.infoWorks}>
-                    The model treats the text as a "bag of words" which ignores the ordering of the words and the frequency.
+                    The model treats the text as a bag of words which ignores the ordering of the words and the frequency.
                     The way the bag of words model in particular works is that each word is treated as an independent probability.
                     P(B) does not depend on event A, so it will be the same for all labels and thus ignored. Therefore we would want to find
                     the label that maximizes the probability score: <b>P(A) * P(B|A) </b> <br/> <br/> 
@@ -85,7 +82,7 @@ export default function About(){
                     P(B|A) is the likelihood of the text given the label ie. how often the text is associated with the label. <br/>
                     Looking at P(B|A), since we are assuming that the words are independent. P(B|A) is the product
                     of the probabilities of each word given the label. <b>P(B|A) = P(word_1 | A) * P(word_2 | A) * ... * P(word_N | A)</b> <br/>
-                    The likelihood claculation also applies "Laplace smoothing" by adding 1 to each word count to handle when the 
+                    The likelihood claculation also applies Laplace smoothing by adding 1 to each word count to handle when the 
                     word does not appear in the training data. 
                     However, since most of these probabilitie will be extremely small, we use the logarithm function and add these probabilities 
                     to get our <b>log-probability score:     </b>

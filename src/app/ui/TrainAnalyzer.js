@@ -12,7 +12,7 @@ const oxygen = Oxygen({
 
 export default function TrainAnalyzer(){
     const [inputText, setInputText] = useState('');
-    const [analysisResult, setAnalysisResult] = useState("");
+    const [analysisResult, setAnalysisResult] = useState('');
     const [probabilities, setProbabilities] = useState([])
     const [show, setShow] = useState(false);
 
@@ -86,7 +86,7 @@ export default function TrainAnalyzer(){
                     <p>
                         No probabilities available.
                         <br/> 
-                        Make sure you're file is in the right form.
+                        Make sure your file is in the right form.
                     </p>
                     
                     )}
