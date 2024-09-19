@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import path from "path";
 import { writeFile } from "fs/promises";
 
-const TextAnalyzer = require("/Users/gracewu/text_analyzer/textAnalyzer.js");
+const TextAnalyzer = require("/textAnalyzer.js");
 const fs = require('fs');
 const csv = require('csv-parser');
 

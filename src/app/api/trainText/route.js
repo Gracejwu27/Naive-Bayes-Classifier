@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const TextAnalyzer = require("/Users/gracewu/text_analyzer/textAnalyzer.js");
+const TextAnalyzer = require("/textAnalyzer.js");
 
 export async function POST(request) {
   const quotes  = await request.json();
