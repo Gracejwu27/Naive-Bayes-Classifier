@@ -1,9 +1,9 @@
 "use client";
 import { useEffect } from "react";
 import styles from "./page.module.css";
-import Header from "/Users/gracewu/text_analyzer/src/app/ui/Header.js";
-import TrainTextAnalyzer from "/Users/gracewu/text_analyzer/src/app/ui/TrainAnalyzerText.js";
-import About from "/Users/gracewu/text_analyzer/src/app/ui/About.js";
+import Header from "/src/app/ui/Header.js";
+import TrainTextAnalyzer from "/src/app/ui/TrainAnalyzerText.js";
+import About from "/src/app/ui/About.js";
 
 export default function Home() {
   useEffect(() => {
